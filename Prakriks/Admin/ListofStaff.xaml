@@ -1,0 +1,13 @@
+﻿<Window x:Class="Prakriks.Admin.ListofStaff"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakriks.Admin"
+        mc:Ignorable="d"
+        Title="ListofStaff" Height="450" Width="800">
+    <Grid>
+        <Image Source="/beaty_logo.png" Height="NaN" Margin="-84,13,468,331" Width="NaN" Cursor="Hand" />
+        <Button Content="На главную" x:Name="back" Click="back_Click"  Background="#FFFF4A6D" HorizontalAlignment="Left" Margin="622,38,0,0" VerticalAlignment="Top" Width="136"/>
+    </Grid>
+</Window>

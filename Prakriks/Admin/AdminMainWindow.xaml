@@ -1,0 +1,30 @@
+﻿<Window x:Class="Prakriks.Admin.AdminMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakriks.Admin"
+        mc:Ignorable="d"
+        Title="AdminMainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Image Source="/beaty_logo.png" Height="NaN" Margin="-84,13,468,331" Width="NaN" Cursor="Hand" />
+        <Menu  Background="#FFFF4A6D" Height="45" VerticalAlignment="Top" Margin="268,9,31,0">
+            <MenuItem Foreground="White" Header="Список">
+                <MenuItem Foreground="White" Background="#FFFF4A6D" Header="Клиенты" x:Name="clients" Click="clients_Click"></MenuItem>
+                <MenuItem Foreground="White" Background="#FFFF4A6D" Header="Сотрудники" x:Name="staff" Click="staff_Click" ></MenuItem>
+                <MenuItem Foreground="White" Background="#FFFF4A6D" Header="Покупки" x:Name="buy" Click="buy_Click"></MenuItem>
+
+
+
+            </MenuItem>
+            <MenuItem Foreground="White" Header="Добавить товар" x:Name="addproduct" Click="addproduct_Click" ></MenuItem>
+            <MenuItem Foreground="White" Header="Аналитика"  ></MenuItem>
+            <Button Content="Корзина" Background="#FFFF4A6D" x:Name="basket" Click="basket_Click"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="116"/>
+        </Menu>
+
+        <Label Content="Поиск" Foreground="white" HorizontalAlignment="Left" Margin="270,67,0,0" VerticalAlignment="Top" Cursor="" Width="495" Height="29" Background="#FFFF4A6D"/>
+    </Grid>
+
+</Window>

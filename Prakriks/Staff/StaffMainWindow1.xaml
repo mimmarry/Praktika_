@@ -1,0 +1,14 @@
+﻿<Window x:Class="Prakriks.Admin.Staff.StaffMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakriks.Admin.Staff"
+        mc:Ignorable="d"
+        Title="StaffMainWindow" Height="450" Width="800">
+    <Grid>
+        <Image Source="/beaty_logo.png" Height="NaN" Margin="-84,13,468,331" Width="NaN" Cursor="Hand" />
+        <Label Content="Поиск" Foreground="white" HorizontalAlignment="Left" Margin="277,35,0,0" VerticalAlignment="Top" Cursor="" Width="272" Height="29" Background="#FFFF4A6D"/>
+        <Button Content="Добавить товар" x:Name="addproduct" Click="addproduct_Click" HorizontalAlignment="Left" Margin="619,37,0,0" VerticalAlignment="Top" Width="126" Background="#FFFF4A6D"/>
+    </Grid>
+</Window>

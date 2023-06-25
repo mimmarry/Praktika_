@@ -1,0 +1,74 @@
+﻿<Window x:Class="Prakriks.Sign_in.SignInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakriks.Sign_in"
+        mc:Ignorable="d"
+        Title="SignInWindow" Height="550" Width="781" ResizeMode="NoResize">
+    <Grid Background="White" Margin="0,0,3,-2" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.232"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Image Source="/beaty_logo.png" Height="NaN" Margin="3,0,489,371" Width="NaN" Cursor="Hand" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.195"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Border MinWidth="400" Margin="65,124,53,0"  Background="#FFFF4A6D" VerticalAlignment="Top" Padding="30" MaxWidth="550" CornerRadius="20" Height="281">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightBlue" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Вход" FontSize="30" FontWeight="Light" Foreground="white" Width="82"/>
+
+                <Grid Margin="0 0 0 10"/>
+                <TextBox x:Name="username" materialDesign:HintAssist.Hint="Логин" Foreground="white" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <PasswordBox x:Name="pass1" materialDesign:HintAssist.Hint="Пароль" Foreground="white" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <Button x:Name="log" FontWeight="Light"  Click="log_Click"  Content="Войти" Width="190" Margin="50" Background="GhostWhite" Foreground="Black" Height="35">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" 
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    CornerRadius="10">
+                                <Border.Effect>
+                                    <DropShadowEffect BlurRadius="20" Color="LightBlue" ShadowDepth="0"/>
+                                </Border.Effect>
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+
+            </StackPanel>
+        </Border>
+        <Button x:Name="signIn" Click="signIn_Click"  HorizontalAlignment="Right" Background="#FFFF4A6D" Foreground="White" FontWeight="Light" Style="{StaticResource MaterialDesignFlatButton}"  Content="Зарегистрироваться" Width="191" BorderThickness="1" BorderBrush="LightBlue" Margin="0,431,99,33">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}" 
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    CornerRadius="10">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="30" Color="LightBlue" ShadowDepth="0"/>
+                        </Border.Effect>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>
