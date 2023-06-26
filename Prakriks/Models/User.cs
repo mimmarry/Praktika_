@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Prakriks.Models
 {
-    public class User
+    public class User1
     {
         public int Id { get; set; }
         public string FullName { get; set; }
@@ -14,6 +14,9 @@ namespace Prakriks.Models
         public string Sex { get; set; }
         public string Email { get; set; }   
         public string Phone { get; set; }   
+        public string Login { get; set; }
+        public string Password { get; set; }
+
    
     }
 }

@@ -6,10 +6,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prakriks.Registration"
         mc:Ignorable="d"
-        Title="LogInWindow" Height="521" Width="877" ResizeMode="NoResize">
-    <Grid Background="White" Margin="0,0,6,1">
-        <Image Source="/beaty_logo.png" Height="NaN" Margin="-21,6,511,382" Width="NaN" Cursor="Hand" />
-        <Border MinWidth="400" Margin="19,123,11,0"  Background="#FFFF4A6D" VerticalAlignment="Top" Padding="30" MaxWidth="550" CornerRadius="20" Height="349">
+        Title="LogInWindow" Height="694" Width="1117" ResizeMode="NoResize">
+    <Grid Background="White" Margin="0,10,-77,-134">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="1119*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/beaty_logo.png" Height="NaN" Margin="0,-57,616,596" Width="NaN" Cursor="Hand" Grid.ColumnSpan="2" />
+        <Border MinWidth="400" Margin="15,144,15,0"  Background="#FFFF4A6D" VerticalAlignment="Top" Padding="30" MaxWidth="550" CornerRadius="20" Height="433" Grid.ColumnSpan="2">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="30" Color="LightBlue" ShadowDepth="0"/>
             </Border.Effect>
@@ -22,11 +26,13 @@
                 <TextBox x:Name="sex" materialDesign:HintAssist.Hint="Пол" Foreground="white" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
                 <TextBox x:Name="email" materialDesign:HintAssist.Hint="Email" Foreground="white" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
                 <TextBox x:Name="phone" materialDesign:HintAssist.Hint="Номер телефона" Foreground="white" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="login" materialDesign:HintAssist.Hint="Логин" Foreground="white" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="password" materialDesign:HintAssist.Hint="Пароль" Foreground="white" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Height="35"/>
 
 
             </StackPanel>
         </Border>
-        <Button x:Name="logIn" Click="logIn_Click"  HorizontalAlignment="Right" Background="#FFFF4A6D" Foreground="White" FontWeight="Light" Style="{StaticResource MaterialDesignFlatButton}"  Content="Войти" Width="192" BorderThickness="1" BorderBrush="LightBlue" Margin="0,36,34,377">
+        <Button x:Name="logIn" Click="logIn_Click"  HorizontalAlignment="Right" Background="#FFFF4A6D" Foreground="White" FontWeight="Light" Style="{StaticResource MaterialDesignFlatButton}"  Content="Войти" Width="192" BorderThickness="1" BorderBrush="LightBlue" Margin="0,68,240,690" RenderTransformOrigin="0.497,-0.637" Grid.Column="1">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="{TemplateBinding Background}" 
@@ -41,7 +47,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="signup1" FontWeight="Light"  Click="signup1_Click"  Content="Зарегистрироваться" Background="GhostWhite" Foreground="Black" Margin="355,424,326,45">
+        <Button x:Name="signup1" FontWeight="Light"  Click="signup1_Click"  Content="Зарегистрироваться" Background="GhostWhite" Foreground="Black" Margin="318,499,341,261" RenderTransformOrigin="0.487,2.009" Grid.Column="1">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="{TemplateBinding Background}" 
