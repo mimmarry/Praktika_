@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Prakriks.Admin;
+using Prakriks.LogIn;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,18 +17,13 @@ using System.Windows.Shapes;
 namespace Prakriks.Registration
 {
     /// <summary>
-    /// Логика взаимодействия для LogInWindow.xaml
+    /// Логика взаимодействия для SignInWindow.xaml
     /// </summary>
-    public partial class LogInWindow : Window
+    public partial class SignInWindow : Window
     {
-        public LogInWindow()
+        public SignInWindow()
         {
             InitializeComponent();
-        }
-
-        private void signup1_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void logIn_Click(object sender, RoutedEventArgs e)
@@ -34,6 +31,14 @@ namespace Prakriks.Registration
             LogInWindow logInWindow = new LogInWindow();
             Close();
             logInWindow.Show();
+        }
+
+        private void signup1_Click(object sender, RoutedEventArgs e)
+        {
+
+            AdminMainWindow adminMainWindow = new AdminMainWindow();
+            Close();
+            adminMainWindow.Show();
         }
     }
 }

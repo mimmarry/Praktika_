@@ -13,7 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Prakriks.Sign_in;
+
+using Prakriks.LogIn;
 
 namespace Prakriks
 {
@@ -29,9 +30,10 @@ namespace Prakriks
 
         private void sign_Click(object sender, RoutedEventArgs e)
         {
-            SignInWindow signInWindow = new SignInWindow();
+            LogInWindow logInWindow= new LogInWindow();
             Close();
-            signInWindow.Show();
+            logInWindow.Show();
+
         }
 
         private void basket_Click(object sender, RoutedEventArgs e)
